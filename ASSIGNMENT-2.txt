@@ -1,0 +1,103 @@
+Assignment -2 Program 1 
+
+// write a program to check whether the given age is eligible for vote or not 
+
+
+
+public class VotingEligibility {
+
+	public static void main(String[] args)
+	{
+		int age=17;
+		if(age>=18)
+		{
+			System.out.println("YOU ARE ELIGIBLE TO VOTE");
+		}	
+		else
+		{
+			System.out.println("YOU ARE NOT ELIGIBLE TO VOTE");
+		}
+
+	}
+
+}
+
+//  write a program to print the given number is even or odd
+
+
+
+public class EvenOrOdd {
+	public static void main(String[] args) {
+		int num=11;
+		if(num%7==0) 
+		{
+			System.out.println("NUM IS EVEN");
+		}
+		else 
+		{
+			System.out.println("NUM IS ODD");
+		}
+	}
+}
+
+
+
+//write a program to print sname , Rno,M1, M2,M3 to t , avg and print the result for 3 students.
+
+
+public class Results {
+	public static void main(String[] args)
+	{
+	String sname1="PREETI";
+	String sname2="ACHAL";
+	String sname3="ASHU";
+	int s1m1=51;
+	int s1m2=57;
+	int s1m3=65;
+	int s2m1=49;
+	int s2m2=31;
+	int s2m3=56;
+	int s3m1=75;
+	int s3m2=69;
+	int s3m3=76;
+	
+	int totals1=s1m1+s1m2+s1m3;
+	float avgs1=totals1/3;
+	
+	int totals2=s2m1+s2m2+s2m3;
+	float avgs2=totals2/3;
+	
+	int totals3=s3m1+s3m2+s3m3;
+	float avgs3=totals3/3;
+	
+	String result;
+	if(s1m1<35 || s1m2<35||s1m3<35)
+	{
+		System.out.println(sname1 +" is failed with total marks "+ totals1 + " and average "+ avgs1);
+	}
+	else
+	{
+		System.out.println(sname1 +" is passed with total marks "+ totals1 + " and average "+ avgs1);
+	}
+
+        if(s2m1<35 || s2m2<35||s2m3<35)
+	{
+		System.out.println(sname2 +" is failed with total marks "+ totals2 + " and average "+ avgs2);
+	}
+	else
+	{
+		System.out.println(sname2 +" is passed with total marks "+ totals2 + " and average "+ avgs2);
+	}
+	
+	if(s3m1<35 || s3m2<35||s3m3<35)
+	{
+		System.out.println(sname3 +" is failed with total marks "+ totals3 + " and average "+ avgs3);
+	}
+	else
+	{
+		System.out.println(sname3 +" is passed with total marks "+ totals3 + " and average "+ avgs3);
+	}
+	
+	
+	}
+}
