@@ -1,0 +1,110 @@
+3 assignment
+
+1  -Write a program to print 
+1
+12
+123
+1234
+12345
+
+public class rightTrianglePattern {
+
+	public static void main(String[] args) 
+	{
+		for(int row=1;row<=10;row++)
+		{
+			for(int column=1;column<=row;column++) 
+			{
+				System.out.print(column + " ");
+			}
+			System.out.println();
+			
+		}
+		
+	}
+
+}
+
+
+
+//2- Write a program 0+1+2+3+5+8..........50 using do while .
+
+public class fibnocci {
+
+	public static void main(String[] args) 
+	
+	{
+		long n1=0;
+	    long n2=1;
+		
+		long n3;
+		System.out.print(n1 +" "+ n2 );
+		for(int i=0;i<50;i++)
+		{
+			n3=n1+n2;
+			System.out.print(" "+n3);
+			n1=n2;
+			n2=n3;
+		}
+		
+
+	}
+
+}
+
+
+// 3-write a program to print
+
+ 12345
+1234
+123
+12
+1
+
+public class rightTriangleReverse {
+
+	public static void main(String[] args)
+	{
+		
+		for(int row=10;row<=10 && row>0 ;row--) 
+		{
+			for(int column=1;column<=row;column++)
+			{
+				System.out.print(column + " ");
+			}
+	
+				System.out.println();
+	
+		}
+	}
+
+}
+
+
+//4  - create student array  and assign values
+1 -A 
+2- B 
+3-C 
+4- D 
+5 - E 
+ Find the name "C"
+
+public class stringArray {
+
+	public static void main(String[] args)
+	{
+		String[] names= { "PREETI","ACHAL","ASHU","VIKRAM","SAURABH"};
+		for(int i=0;i<names.length;i++) 
+		{
+			if(names[i]=="ASHU")
+		
+			{
+				System.out.println("found ASHU");
+				break;
+			}
+		}
+			
+
+	}
+
+}
