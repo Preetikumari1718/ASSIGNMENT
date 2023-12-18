@@ -1,0 +1,87 @@
+
+ASSIGNMENT-5
+
+1-Create a class called bank
+acc_no
+acc_name
+amount
+deposit
+Trans
+create a setVal method to set the values .
+create a getVal method to get the values.
+
+
+public class Bank {
+	//variables
+	int acc_no;
+	String acc_name;
+	int dep;
+	int amt;
+	int trans;
+	//setvalue method to set the values
+	public void setval() {	
+		acc_no=1234567890;
+		acc_name="PREETI";
+		dep=22;
+		amt=1000;
+		trans=500;
+	}
+	//Getvalue method to get the values
+	public void getvalue() {
+		System.out.println("ACC_NO."+acc_no);
+		System.out.println("ACC_NAME "+acc_name);
+		System.out.println("Amount :"+amt);
+		System.out.println("Department "+dep);
+		System.out.println("Transaction:"+trans);
+	}
+
+//getvalue and setvalue methods are called in the main method
+	public static void main(String[] args) {
+
+		Bank b=new Bank();
+		b.setval();
+		b.getvalue();
+
+	}
+
+}
+
+
+// 2- Create a method in Class A 
+
+OVERLOAD IT WITH DIFFERENT SIGNATURES.
+CALL THE METHODS FROM MAIN METHOD 
+
+
+public class A {
+
+	public static void main(String[] args) {
+		A a=new A();
+		a.studentdetails("x");
+		a.studentdetails(5);
+		a.studentdetails("J", "S");
+		a.studentdetails("J", "SCS",5 );
+
+	}
+//method overloading
+	// here studentdetails has been overloaded with different signatures
+	void studentdetails(String Name) {
+		
+		System.out.println(Name);
+	}
+	void studentdetails(String Name, String School) {
+		
+		System.out.println(Name+"  "+School);
+	}
+void studentdetails(String Name, String School, int ClassNO) {
+		System.out.println(Name+School+ClassNO);
+	}
+void studentdetails(double CLassno) {
+	
+	System.out.println(CLassno);
+}
+	
+	
+	
+	
+}
